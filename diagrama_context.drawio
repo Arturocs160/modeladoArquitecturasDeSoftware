@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0" version="28.2.3">
+  <diagram name="Casos de Uso" id="0">
+    <mxGraphModel dx="713" dy="372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Alumno" value="Alumno" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin" value="Administrador" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="20" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cajero" value="Cajero" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="90" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Inscripcion" value="Realizar inscripción" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="240" y="310" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Pago" value="Pagar colegiatura" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="250" y="370" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Historial" value="Consultar historial/comprobantes" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="210" y="420" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Gestion" value="Gestionar inscripciones" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="220" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ReportesAcad" value="Generar reportes académicos" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="210" y="250" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidarPagos" value="Validar pagos" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="230" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ReportesFin" value="Generar reportes financieros" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="200" y="130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Transaccion" value="Procesar transacción" style="shape=ellipse;" parent="1" vertex="1">
+          <mxGeometry x="510" y="460" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" parent="1" source="Alumno" target="Inscripcion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" parent="1" source="Alumno" target="Pago" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" parent="1" source="Alumno" target="Historial" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" parent="1" source="Admin" target="Gestion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" parent="1" source="Admin" target="ReportesAcad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" parent="1" source="Cajero" target="ValidarPagos" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" parent="1" source="Cajero" target="ReportesFin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="include" style="exitX=1.003;exitY=0.643;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Pago" target="Transaccion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pIfmiTo87jSj_gJRddER-1" value="" style="exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Transaccion" target="Pasarela">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="390" as="sourcePoint" />
+            <mxPoint x="480" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pasarela" value="Pasarela de pagos" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="250" y="480" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
